@@ -7,5 +7,5 @@ Projeto com o objetivo de aprender os conceitos do Kafka.
 # O que é Kafka?
 
 # Referências
-- Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
-- 
+- Kafka. Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
+- Red Hat. O que é Kafka. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
