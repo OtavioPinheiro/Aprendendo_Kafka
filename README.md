@@ -14,7 +14,9 @@ Projeto com o objetivo de aprender os conceitos do Kafka.
 **Fonte:** [Red Hat](https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka)
 
 # Instalando o Kafka
+Para fazer download do Kafka, siga para o [site oficial](https://kafka.apache.org/downloads). Realize o download da última versão do Kafka, baixando o arquivo `.tgz`[^1]
 
+[^1]: Um arquivo TGZ ou GZ é um tipo de arquivo GZIP *Compressed Tar Archive*. Ou seja, é um tipo de arquivo compactado ("zipado").
 
 # Referências
 - Kafka. Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
