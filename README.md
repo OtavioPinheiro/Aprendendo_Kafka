@@ -21,10 +21,14 @@ Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que nã
 # Comandos
 Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
 
-| Comandos | Funcionalidade |
-|----------|----------------|
-| `bin/kafka-server-start.sh config/server.properties` | Sobe o servidor Kafka, usando as configurações padrões de servidor. |
+**OBS.:** Apache Kafka pode ser executado em qualquer Sistema Operacional, porém o recomendado é o Linux. Dito isso, fique ciente de que alguns bugs podem ocorrer quando executamos o Kafka no Windows e que alguns comandos e configurações podem ser diferentes devido as peculiaridades de cada sistema operacional.
+
+| Comandos | Funcionalidade | OS |
+|----------|----------------|----|
+| `bin/kafka-server-start.sh config/server.properties` | Sobe o servidor Kafka, usando as configurações padrões de servidor. | Linux |
+| `.\bin\windows\kafka-server-start.bat .\config\server.properties` | Sobe o servidor Kafka, usando as configurações padrões de servidor.| Windows |
 
 # Referências
 - Kafka. Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
 - Red Hat. O que é Kafka. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
+- HowToDoInJava. Apache Kafka - Getting Started on Windows 10. Disponível em: https://howtodoinjava.com/kafka/getting-started-windows-10/
