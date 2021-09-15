@@ -18,6 +18,13 @@ Para fazer download do Kafka, siga para o [site oficial](https://kafka.apache.or
 
 Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que não possua espaços e nem caracteres especiais, evitando, assim, problemas futuros na hora de excutar o Kafka.
 
+# Comandos
+Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
+
+| Comandos | Funcionalidade |
+|----------|----------------|
+| `bin/kafka-server-start.sh config/server.properties` | Sobe o servidor Kafka, usando as configurações padrões de servidor. |
+
 # Referências
 - Kafka. Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
 - Red Hat. O que é Kafka. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
