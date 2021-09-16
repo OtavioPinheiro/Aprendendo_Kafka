@@ -23,11 +23,14 @@ Para fazer download do Kafka, siga para o [site oficial](https://kafka.apache.or
 Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que não possua espaços e nem caracteres especiais, evitando, assim, problemas futuros na hora de excutar o Kafka.
 
 # Conceitos do Kafka
-A seguir alguns conceitos sobre Kafka.
+A seguir alguns conceitos sobre sistemas de mensageria para ter um melhor entendimento sobre o Kafka.
 
 ## O que são sistemas de mensageria?
 > Mensageria é um conceito que define que sistemas distribuídos, possam se comunicar por meio de troca de mensagens (evento), sendo que estas mensagens serão gerenciadas por um "Message Broker (servidor/módulo de mensagens)."
-[FONTE](https://medium.com/@devbrito91/mensageria-1330c6032049)
+[FONTE](https://medium.com/@devbrito91/mensageria-1330c6032049).
+
+# O que é um Message Broker?
+
 
 ## O que é um *consumer*?
 
