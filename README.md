@@ -4,6 +4,8 @@ Projeto com o objetivo de aprender os conceitos do Kafka.
 # Sumário
 - [O que é Kafka?](#o-que-é-kafka)
 - [Instalando o Kafka](#instalando-o-kafka)
+- [Conceitos do Kafka](#conceitos-do-kafka)
+- [Comandos](#comandos)
 - [Referências](#referências)
 
 # O que é Kafka?
@@ -19,6 +21,18 @@ Projeto com o objetivo de aprender os conceitos do Kafka.
 Para fazer download do Kafka, siga para o [site oficial](https://kafka.apache.org/downloads). Realize o download da última versão do Kafka, baixando o arquivo `.tgz`. Um arquivo TGZ ou GZ é um tipo de arquivo GZIP *Compressed Tar Archive*. Ou seja, é um tipo de arquivo compactado ("zipado"). [Mais informações](https://www.lifewire.com/what-are-tgz-gz-files-2622391).
 
 Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que não possua espaços e nem caracteres especiais, evitando, assim, problemas futuros na hora de excutar o Kafka.
+
+# Conceitos do Kafka
+A seguir alguns conceitos sobre Kafka.
+
+## O que são sistemas de mensageria?
+
+
+## O que é um *consumer*?
+
+
+## O que é um *producer*?
+
 
 # Comandos
 Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
@@ -46,6 +60,7 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 
 
 # Referências
-- Kafka. Kafka. Disponível em: https://kafka.apache.org/intro#intro_streaming
-- Red Hat. O que é Kafka. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
-- HowToDoInJava. Apache Kafka - Getting Started on Windows 10. Disponível em: https://howtodoinjava.com/kafka/getting-started-windows-10/
+- Kafka. **Kafka**. Disponível em: https://kafka.apache.org/intro#intro_streaming
+- Red Hat. **O que é Kafka**. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
+- HowToDoInJava. **Apache Kafka - Getting Started on Windows 10**. Disponível em: https://howtodoinjava.com/kafka/getting-started-windows-10/
+- Thiago Brito. **01-Mensageria**. Diponível em: https://medium.com/@devbrito91/mensageria-1330c6032049
