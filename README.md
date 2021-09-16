@@ -26,7 +26,8 @@ Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que nã
 A seguir alguns conceitos sobre Kafka.
 
 ## O que são sistemas de mensageria?
-
+> Mensageria é um conceito que define que sistemas distribuídos, possam se comunicar por meio de troca de mensagens (evento), sendo que estas mensagens serão gerenciadas por um "Message Broker (servidor/módulo de mensagens)."
+[FONTE](https://medium.com/@devbrito91/mensageria-1330c6032049)
 
 ## O que é um *consumer*?
 
