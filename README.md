@@ -33,9 +33,12 @@ A seguir alguns conceitos sobre sistemas de mensageria para ter um melhor entend
 ## O que são middlewares?
 > O middleware é o software que se encontra entre o sistema operacional e os aplicativos nele executados. Funcionando de forma essencial como uma camada oculta de tradução, o middleware permite a comunicação e o gerenciamento de dados para aplicativos distribuídos. Muitas vezes, o middleware é chamado de “encanamento”, uma vez que ele conecta dois aplicativos para que os dados e bancos de dados possam ser facilmente transportados através do “cano”. O uso do middleware permite que os usuários executem solicitações como enviar formulários em um navegador da Web ou permitir que o servidor Web apresente páginas dinâmicas da web com base no perfil de um usuário.
 >
-> Exemplos comuns de middleware incluem middleware de banco de dados, middleware de servidor de aplicativos, middleware orientado a mensagens, middleware de web e monitores de processamento de transações. Normalmente, cada programa oferece serviços de sistemas de mensagens para que diversos aplicativos possam se comunicar utilizando estruturas de mensagens como protocolo SOAP, serviços Web, REST (representational state transfer) e JSON (JavaScript Object Notation). Embora todos os tipos de middleware executem funções de comunicação, o tipo que uma empresa escolherá depende de qual serviço está sendo utilizado e qual tipo de informação deve ser comunicado. Isso pode incluir autenticação de segurança, gerenciamento de transações, consultas de mensagens, servidores de aplicativos, servidores da web e diretórios. O middleware também pode ser utilizado para processamento distribuído com ações que ocorrem em tempo real em vez de envio e recebimento repetitivo de dados.
+> Exemplos comuns de middleware incluem middleware de banco de dados, middleware de servidor de aplicativos, middleware orientado a mensagens, middleware de web e monitores de processamento de transações. Normalmente, cada programa oferece serviços de sistemas de mensagens para que diversos aplicativos possam se comunicar utilizando estruturas de mensagens como protocolo SOAP (Simple Object Access Protocol), serviços Web, REST (representational state transfer) e JSON (JavaScript Object Notation). Embora todos os tipos de middleware executem funções de comunicação, o tipo que uma empresa escolherá depende de qual serviço está sendo utilizado e qual tipo de informação deve ser comunicado. Isso pode incluir autenticação de segurança, gerenciamento de transações, consultas de mensagens, servidores de aplicativos, servidores da web e diretórios. O middleware também pode ser utilizado para processamento distribuído com ações que ocorrem em tempo real em vez de envio e recebimento repetitivo de dados.
 
-FONTE: [Microsoft - O que é middleware?](https://azure.microsoft.com/pt-br/overview/what-is-middleware/)
+**FONTE:**
+- [Microsoft - O que é middleware?](https://azure.microsoft.com/pt-br/overview/what-is-middleware/)
+- [SOAP](https://pt.wikipedia.org/wiki/SOAP)
+
 
 ## O que é um *Message Broker*?
 > Os *Message Brokers* são uma tecnologia de comunicação entre aplicativos para ajudar a construir um mecanismo de integração comum para oferecer suporte a arquiteturas de nuvem híbrida, baseada em microsserviços, sem servidor (*serverless*) e nativa da nuvem.
@@ -52,7 +55,7 @@ FONTE: [Microsoft - O que é middleware?](https://azure.microsoft.com/pt-br/over
 > 
 > Os *Message Brokers* podem incluir gerenciadores de filas para lidar com as interações entre as várias filas de mensagens, bem como serviços que forneçam roteamento de dados, tradução de mensagens, persistência e funcionalidades de gerenciamento de estado do cliente.
 
-FONTE: [IBM - Message Brokers](ttps://www.ibm.com/cloud/learn/message-brokers)
+FONTE: [IBM - Message Brokers](https://www.ibm.com/cloud/learn/message-brokers)
 
 ## O que é um *consumer*?
 
