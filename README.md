@@ -57,11 +57,20 @@ A seguir alguns conceitos sobre sistemas de mensageria para ter um melhor entend
 
 FONTE: [IBM - Message Brokers](https://www.ibm.com/cloud/learn/message-brokers)
 
-## O que é um *consumer*?
+## O que é um *event*?
+*Event*, do inglês, significa evento, mas neste contexto de mensageria, também significa a mensagem em si, ou seja, um evento é o mesmo que mensagem no contexto de mensageria. Essa mensagem pode ser escrita em JSON, XML ou em qualquer tipo de formato em bytes.
 
+## O que é uma *Queue*?
+*Queue*, do inglês, significa fila. Neste caso, quando o *producer* gera as mensagens, essas mensagens serão recebidas pela *Queue* e ficarão armazenadas nela até que o *consumer* retire as mensagens da fila.
+
+## O que é um *consumer*?
+*Consumer* é a aplicação que irá consumir as mensagens que estão armazenadas na fila(*queue*).
 
 ## O que é um *producer*?
+*Producer* é a aplicação que irá produzir e enviar as mensagens para na fila do *Message Broker*.
 
+## O que é AMQP?
+AMQP é um acrônimo para *Advanced Message Queuing Protocol*, que é um protocolo específico para a comunicação baseada em mensagens.
 
 # Comandos
 Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
