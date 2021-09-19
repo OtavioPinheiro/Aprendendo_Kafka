@@ -16,7 +16,7 @@ public class FraudDetectorService {
         while(true) {
             var records = consumer.poll(Duration.ofMillis(100));
             if (!records.isEmpty()) {
-                System.out.println("Encontrei " + records.count() + " registros");
+                System.out.println("Found " + records.count() + " registers");
                 for (var record : records) {
                     System.out.println("------------------------------------------");
                     System.out.println("Processing new order, checking for fraud");
