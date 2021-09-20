@@ -13,6 +13,8 @@ public class FraudDetectorService {
     public static void main(String[] args) {
         var consumer = new KafkaConsumer<String, String>(properties());
         consumer.subscribe(Collections.singletonList("ECOMMERCE_NEW_ORDER"));
+        //Obs.: É super raro ter um consumer escutando de vários tópicos,
+        // pois cada serviço irá ter um objetivo específico. Mas é possível.
         while(true) {
             var records = consumer.poll(Duration.ofMillis(100));
             if (!records.isEmpty()) {
