@@ -1,5 +1,5 @@
 # Aprendendo Kafka
-Projeto com o objetivo de aprender os conceitos do Kafka.
+Projeto com o objetivo de aprender os conceitos do Kafka e sistemas de mensageria.
 
 # Sumário
 - [O que é Kafka?](#o-que-é-kafka)
