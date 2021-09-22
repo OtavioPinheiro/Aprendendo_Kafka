@@ -18,11 +18,17 @@ public class EmailService {
                 System.out.println("Found " + records.count() + " registers");
                 for (var record : records) {
                     System.out.println("------------------------------------------");
-                    System.out.println("LOG");
+                    System.out.println("Sending email");
                     System.out.println(record.key());
                     System.out.println(record.value());
                     System.out.println(record.partition());
                     System.out.println(record.offset());
+                    try {
+                        Thread.sleep(1_000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Email sent");
                 }
             }
         }
