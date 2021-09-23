@@ -8,7 +8,7 @@ Projeto com o objetivo de aprender os conceitos do Kafka e sistemas de mensageri
 - [Comandos](#comandos)
 - [Referências](#referências)
 
-# O que é Kafka?
+# O que é Apache Kafka?
 > O Apache Kafka é uma plataforma distribuída de transmissão de dados que é capaz de publicar, subscrever, armazenar e processar fluxos de registro em tempo real.
 > 
 > O Apache Kafka foi desenvolvido para processar fluxos de dados provenientes de diversas fontes, bem como para entregá-los a vários clientes. Em resumo, essa plataforma movimenta volumes imensos de dados não apenas do ponto A ao ponto B, mas também de A a Z e para qualquer outro local que você precisar simultaneamente.
