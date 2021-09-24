@@ -95,6 +95,7 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic <nomeDoTópico>` |  |
 | Linux | `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` | Cria um *consumer* no Kafka. O *consumer* começará desde o ínicio a consumir as mensagens. |
 | Windows | `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` |  |
+|  |  |
 
 
 # Referências
