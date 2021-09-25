@@ -73,6 +73,18 @@ FONTE: [IBM - Message Brokers](https://www.ibm.com/cloud/learn/message-brokers)
 ## O que é AMQP?
 AMQP é um acrônimo para *Advanced Message Queuing Protocol*, que é um protocolo específico para a comunicação baseada em mensagens.
 
+## O que são tópicos?
+Os tópicos de Kafka são as categorias usadas para organizar as mensagens. Cada tópico tem um nome que é único em todo *cluster* Kafka. Mensagens são enviadas e lidas a partir de tópicos específicos, ou seja, os *producers* escrevem dados nos tópicos e os *consumers* leem dados dos tópicos.
+
+Os tópicos Kafka são *multi-subscribers*, significando que um tópico pode ter zero, um ou múltiplos consumidores lendo mensagens e produtores escrevendo nesse tópico.
+
+Em palavras simples, tópicos, no contexto de mensageria, são como as filas, onde as mensagens serão gravadas.
+
+[FONTE](https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/)
+
+## O que são partições?
+
+
 # Comandos
 Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
 
@@ -98,9 +110,7 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` |  |
 | Linux | `vi config/server.properties` | Utiliza o editor de texto `vi` para acessar as configurações do kafka. |
 
-# Tópicos
-
-# Partições
+# Trabalhando com partições
 
 
 [Informações extras!](https://qastack.com.br/programming/38024514/understanding-kafka-topics-and-partitions)
@@ -111,3 +121,4 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 - HowToDoInJava. **Apache Kafka - Getting Started on Windows 10**. Disponível em: https://howtodoinjava.com/kafka/getting-started-windows-10/
 - Thiago Brito. **01-Mensageria**. Diponível em: https://medium.com/@devbrito91/mensageria-1330c6032049
 - IBM. ***Message Brokers***. Disponível em: https://www.ibm.com/cloud/learn/message-brokers
+- Datell. **What is a Kafka Topic?**. Disponível em: https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/
