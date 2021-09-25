@@ -4,7 +4,7 @@ Projeto com o objetivo de aprender os conceitos do Kafka e sistemas de mensageri
 # Sumário
 - [O que é Kafka?](#o-que-é-kafka)
 - [Instalando o Kafka](#instalando-o-kafka)
-- [Conceitos do Kafka](#conceitos-do-kafka)
+- [Conceitos iniciais do Kafka](#conceitos-iniciais-do-kafka)
 - [Comandos](#comandos)
 - [Partições](#partições)
 - [Referências](#referências)
@@ -23,7 +23,7 @@ Para fazer download do Kafka, siga para o [site oficial](https://kafka.apache.or
 
 Depois de ter baixado o Kafka, descompacte o arquivo `.tgz` em uma pasta que não possua espaços e nem caracteres especiais, evitando, assim, problemas futuros na hora de excutar o Kafka.
 
-# Conceitos do Kafka
+# Conceitos iniciais do Kafka
 A seguir alguns conceitos sobre sistemas de mensageria para ter um melhor entendimento sobre o Kafka.
 
 ## O que são sistemas de mensageria?
@@ -97,6 +97,8 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Linux | `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` | Cria um *consumer* no Kafka. O *consumer* começará desde o ínicio a consumir as mensagens. |
 | Windows | `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` |  |
 | Linux | `vi config/server.properties` | Utiliza o editor de texto `vi` para acessar as configurações do kafka. |
+
+# Tópicos
 
 # Partições
 
