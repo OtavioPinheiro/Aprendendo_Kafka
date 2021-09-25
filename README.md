@@ -83,7 +83,11 @@ Em palavras simples, tópicos, no contexto de mensageria, são como as filas, on
 [FONTE](https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/)
 
 ## O que são partições?
+Partições, como o nome sugere, são uma parte de um tópico. No Kafka, os tópicos podem ser particionados e replicados entre brokers ao longo da implementação. Os *brokers* referem-se a cada um dos nós em um *cluster* Kafka. As partições são importantes porque permitem a paralelização de tópicos, permitindo uma alta taxa de transferência de mensagens. 
 
+Em outras palavras, as partições são um artifício que permite o trabalho (desenvolvimento) em paralelo.
+
+[FONTE](https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/)
 
 # Comandos
 Antes de apresentar os comandos usados no Kafka, é importante lembrar que para que funcionem, é necessário estar dentro da pasta do Kafka, a mesma pasta que foi gerada quando o arquivo de download foi descompactado.
