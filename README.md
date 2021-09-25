@@ -6,6 +6,7 @@ Projeto com o objetivo de aprender os conceitos do Kafka e sistemas de mensageri
 - [Instalando o Kafka](#instalando-o-kafka)
 - [Conceitos do Kafka](#conceitos-do-kafka)
 - [Comandos](#comandos)
+- [Partições](#partições)
 - [Referências](#referências)
 
 # O que é Apache Kafka?
@@ -95,8 +96,12 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic <nomeDoTópico>` |  |
 | Linux | `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` | Cria um *consumer* no Kafka. O *consumer* começará desde o ínicio a consumir as mensagens. |
 | Windows | `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` |  |
-|  |  |
+| Linux | `vi config/server.properties` | Utiliza o editor de texto `vi` para acessar as configurações do kafka. |
 
+# Partições
+
+
+[Informações extras!](https://qastack.com.br/programming/38024514/understanding-kafka-topics-and-partitions)
 
 # Referências
 - Kafka. **Kafka**. Disponível em: https://kafka.apache.org/intro#intro_streaming
