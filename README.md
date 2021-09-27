@@ -113,8 +113,9 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Linux | `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` | Cria um *consumer* no Kafka. O *consumer* começará desde o ínicio a consumir as mensagens. |
 | Windows | `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` |  |
 | Linux | `vi config/server.properties` | Utiliza o editor de texto `vi` para acessar as configurações do kafka. |
-| Linux | `bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` | Alterar a quantidade de partições em um tópico. |
+| Linux | `bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` | Alterar a quantidade de partições em um tópico. Se houver apenas um consumidor, ou seja, apenas um serviço consumindo as mensagens das partições do tópico, esse consumidor irá ler as mensagens de todas as partições. |
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
+
 
 # Trabalhando com partições
 
