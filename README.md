@@ -116,7 +116,6 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Linux | `bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` | Alterar a quantidade de partições em um tópico. Se houver apenas um consumidor, ou seja, apenas um serviço consumindo as mensagens das partições do tópico, esse consumidor irá ler as mensagens de todas as partições. |
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
 
-
 # Trabalhando com partições
 
 
