@@ -117,7 +117,7 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
 
 # Trabalhando com partições
-
+Para criar partições no tópico Kafka usamos
 
 [Informações extras!](https://qastack.com.br/programming/38024514/understanding-kafka-topics-and-partitions)
 
