@@ -117,7 +117,7 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
 
 # Trabalhando com partições
-Em algumas situações pode ser necessário trabalhar com paralelização e, no Kafka, cada paralelização corresponde a uma partição, ou seja, o número máximo de paralelização é igual ao número de partições do tópico.
+Em algumas situações pode ser necessário trabalhar com paralelização e, no Kafka, cada paralelização corresponde a uma partição, ou seja, o número máximo de paralelização é igual ao número de partições do tópico...
 
 [Informações extras!](https://qastack.com.br/programming/38024514/understanding-kafka-topics-and-partitions)
 
