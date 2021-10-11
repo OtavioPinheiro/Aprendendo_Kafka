@@ -5,8 +5,17 @@ Projeto com o objetivo de aprender os conceitos do Kafka e sistemas de mensageri
 - [O que é Kafka?](#o-que-é-kafka)
 - [Instalando o Kafka](#instalando-o-kafka)
 - [Conceitos iniciais do Kafka](#conceitos-iniciais-do-kafka)
+  - [O que são sistemas de mensageria?](#o-que-são-sistemas-de-mensageria)
+  - [O que são middlewares?](#o-que-são-middlewares)
+  - [O que é um Message Broker?](#o-que-é-um-message-broker)
+  - [O que é um event?](#o-que-é-um-event)
+  - [O que é uma Queue?](#o-que-é-uma-queue)
+  - [O que é um consumer?](#o-que-é-um-consumer)
+  - [O que é um producer?](#o-que-é-um-producer)
+  - [O que é AMQP?](#o-que-é-amqp)
+  - [O que são tópicos?](#o-que-são-tópicos)
+  - [O que são partições?](#o-que-são-partições)
 - [Comandos](#comandos)
-- [Partições](#partições)
 - [Referências](#referências)
 
 # O que é Apache Kafka?
@@ -39,7 +48,6 @@ A seguir alguns conceitos sobre sistemas de mensageria para ter um melhor entend
 **FONTE:**
 - [Microsoft - O que é middleware?](https://azure.microsoft.com/pt-br/overview/what-is-middleware/)
 - [SOAP](https://pt.wikipedia.org/wiki/SOAP)
-
 
 ## O que é um *Message Broker*?
 > Os *Message Brokers* são uma tecnologia de comunicação entre aplicativos para ajudar a construir um mecanismo de integração comum para oferecer suporte a arquiteturas de nuvem híbrida, baseada em microsserviços, sem servidor (*serverless*) e nativa da nuvem.
