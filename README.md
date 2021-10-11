@@ -108,6 +108,8 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-server-stop.bat` |  |
 | Linux | `bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic <nomeDoTópico>` | Cria um tópico no Kafka. |
 | Windows | `.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic <nomeDoTópico>` |  |
+| Linux | `bin/kafka-topics.sh --list --bootstrap-server localhost:9092` | Lista os tópicos Kafka |
+| Windows | `.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092` |  |
 | Linux | `bin/kafka-console-producer.sh --broker-list localhost:9092 --topic <nomeDoTópico>` | Cria um *producer* no Kafka para produzir mensagens a serem consumidas. |
 | Windows | `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic <nomeDoTópico>` |  |
 | Linux | `bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nomeDoTópico> --from-beginning` | Cria um *consumer* no Kafka. O *consumer* começará desde o ínicio a consumir as mensagens. |
@@ -117,9 +119,16 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
 
 # Trabalhando com partições
-Em algumas situações pode ser necessário trabalhar com paralelização e, no Kafka, cada paralelização corresponde a uma partição, ou seja, o número máximo de paralelização é igual ao número de partições do tópico...
+Em algumas situações pode ser necessário trabalhar com paralelização e, no Kafka, cada paralelização corresponde a uma partição, ou seja, o número máximo de paralelização é igual ao número de partições do tópico
 
 [Informações extras!](https://qastack.com.br/programming/38024514/understanding-kafka-topics-and-partitions)
+
+## Tópicos Kafka
+Os tópicos Kafka podem ser criados automáticamente ou manualmente. É uma boa prática criar todos os *input/output* dos tópicos manualmente antes de começar a aplicaçãom do que usar a criação automática de tópcos. Entretanto, tópicos não precisam ser manualmente criados. A criação de tópicos automaticamente é uma configuração padrão e pode ser checada verificando se a propriedade **auto.create.topics.enable** está marcada como *true*. Com essa configuração, os tópicos são criados automaticamente quando a aplicação produz, consume ou busca um metadado de um tópico ainda não existente.
+
+Para a criação automática de tópicos é uma boa prática checar a propriedade **num.partitions**, para o número de partições, e a **default.replication.factor** para o número padrão de replicas do tópico criado.
+
+Fonte: [Datell. What is a Kafka Topic?](https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/)
 
 # Referências
 - Kafka. **Kafka**. Disponível em: https://kafka.apache.org/intro#intro_streaming
