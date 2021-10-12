@@ -125,6 +125,8 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 | Linux | `vi config/server.properties` | Utiliza o editor de texto `vi` para acessar as configurações do kafka. |
 | Linux | `bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` | Alterar a quantidade de partições em um tópico. Se houver apenas um consumidor, ou seja, apenas um serviço consumindo as mensagens das partições do tópico, esse consumidor irá ler as mensagens de todas as partições. |
 | Windows | `.\bin\windows\kafka-topics.bat --alter --zookeeper localhost:2181 --topic <nomeDoTopico> --partitions <numeroDeParticoes>` |  |
+| Linux | `bin/kafka-consumer-groups.sh --all-groups --bootstrap-server localhost:9092 --describe` | Descreve todos os grupos de consumo |
+| Windows | `.\bin\kafka-consumer-groups.bat --all-groups --bootstrap-server localhost:9092 --describe` |  |
 
 # Trabalhando com partições
 Em algumas situações pode ser necessário trabalhar com paralelização e, no Kafka, cada paralelização corresponde a uma partição, ou seja, o número máximo de paralelização é igual ao número de partições do tópico
