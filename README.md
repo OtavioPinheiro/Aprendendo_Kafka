@@ -138,6 +138,9 @@ Para a criação automática de tópicos é uma boa prática checar a propriedad
 
 Fonte: [Datell. What is a Kafka Topic?](https://dattell.com/data-architecture-blog/what-is-a-kafka-topic/)
 
+## Recepção de mensagens com tópico definido dentro de um grupo
+Dentro de um grupo quando chega uma mensagem com um tópico definido, a mensagem só irá chegar para um dos programas que está ouvindo e não para todos, evitando a execução do mesmo código, ou seja, quando chega uma mensagem, ela irá para todos os grupos que estão escutando um tópico específico, mas dentro de um grupo, se houver vários programas escutando o mesmo tópico no mesmo grupo, a mensagem só irá para um deles.
+
 # Referências
 - Kafka. **Kafka**. Disponível em: https://kafka.apache.org/intro#intro_streaming
 - Red Hat. **O que é Kafka**. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
