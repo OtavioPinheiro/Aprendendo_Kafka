@@ -104,6 +104,14 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 
 **OBS-2:** Antes de iniciar o Kafka, inicie o Zookeeper primeiro!
 
+**OBS-3:** Para os SOs Windows é necessário mudar o local da pasta logs especificado no arquivo `.\config\server.properties` e, também, mudar o caminho da propriedade `dataDir` dentro do arquivo `zoo_sample.cfg`. Assim temos:
+- `dataDir=/tmp/zookeeper` para, por exemplo, `C:\zookeeper-3.6.3\data`
+- `log.dirs=/tmp/kafka-logs` para, por exemplo, `log.dirs=C:\kafka_2.13-2.8.0\kafka-logs`
+
+Essas modificações tem que ser feitas para que o Kafka consiga ter e encontrar as pastas com os logs gerados.
+
+[Mais informações](https://dzone.com/articles/running-apache-kafka-on-windows-os)
+
 | OS | Comandos | Funcionalidade |
 |----|----------|----------------|
 | Linux | `bin/zookeeper-server-start.sh config/zookeeper.properties` | Inicia o Zookeeper na porta 2181, usando as configurações padrões do servidor. |
