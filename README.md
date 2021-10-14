@@ -151,6 +151,11 @@ Fonte: [Datell. What is a Kafka Topic?](https://dattell.com/data-architecture-bl
 ## Recepção de mensagens com tópico definido dentro de um grupo
 Dentro de um grupo quando chega uma mensagem com um tópico definido, a mensagem só irá chegar para um dos programas que está ouvindo e não para todos, evitando a execução do mesmo código, ou seja, quando chega uma mensagem, ela irá para todos os grupos que estão escutando um tópico específico, mas dentro de um grupo, se houver vários programas escutando o mesmo tópico no mesmo grupo, a mensagem só irá para um deles.
 
+# Executando o Kafka
+Como mencionado anteriormente, antes de subir o servidor Kafka, o zookeeper já deve ter sido executado. Ainda, quando estamos rodando uma aplicação que utilize o Kafka, o mesmo deve estar sendo executado para que a aplicação funcione.
+
+Quando o Kafka estiver consumindo mensagens e, neste instante, resolver realizar um balanceamento das partições do tópico, no momento em que ele for realizar o *commit* das operações, ocorrerá uma falha `Warning: Consumer group '<nomeDoConsumerGroup>' is rebalancing.`. Para resolver esse problema é necessário controlar quando o Kafka realiza os *commits* (*poll*). Para isso, podemos definir a propriedade `MAX_POLL_RECORDS_CONFIG` para 1, dessa maneira, o *consumer* do Kafka irá consumir as mensagens do tópico de um em um e, todas as vezes que terminar que consumir uma mensagem, realizará um *commit*.
+
 # Referências
 - Kafka. **Kafka**. Disponível em: https://kafka.apache.org/intro#intro_streaming
 - Red Hat. **O que é Kafka**. Disponível em: https://www.redhat.com/pt-br/topics/integration/what-is-apache-kafka
