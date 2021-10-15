@@ -1,19 +1,12 @@
 package br.com.alura.ecommerce;
 
-import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.common.serialization.StringDeserializer;
-
-import java.time.Duration;
-import java.util.Collections;
-import java.util.Properties;
-import java.util.UUID;
 
 public class FraudDetectorService {
     public static void main(String[] args) {
         var fraudService = new FraudDetectorService();
-        var service = new KafkaService("ECOMMERCE_NEW_ORDER",
+        var service = new KafkaService(FraudDetectorService.class.getSimpleName(),
+                "ECOMMERCE_NEW_ORDER",
                 fraudService::parse);
         service.run();
     }
@@ -35,10 +28,4 @@ public class FraudDetectorService {
 
     //Obs.: É super raro ter um consumer escutando de vários tópicos,
         // pois cada serviço irá ter um objetivo específico. Mas é possível.
-
-    private static Properties properties() {
-        var properties = new Properties();
-        properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, FraudDetectorService.class.getSimpleName());
-        return properties;
-    }
 }
