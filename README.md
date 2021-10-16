@@ -104,9 +104,11 @@ Antes de apresentar os comandos usados no Kafka, é importante lembrar que para 
 
 **OBS-2:** Antes de iniciar o Kafka, inicie o Zookeeper primeiro!
 
-**OBS-3:** Para os SOs Windows é necessário mudar o local da pasta logs especificado no arquivo `.\config\server.properties` e, também, mudar o caminho da propriedade `dataDir` dentro do arquivo `zoo_sample.cfg`. Assim temos:
-- `dataDir=/tmp/zookeeper` para, por exemplo, `C:\zookeeper-3.6.3\data`
-- `log.dirs=/tmp/kafka-logs` para, por exemplo, `log.dirs=C:\kafka_2.13-2.8.0\kafka-logs`
+**OBS-3:** Caso queira persistir os dados dos tópicos gerados será necessário mudar o local da pasta logs especificado no arquivo de configuração do servidor, tanto do Kafka, quanto do Zookeeper, que se encontram, no caso do SO Windows, em `.\config\server.properties` e `.\config\zookeeper.properties`, também, precisamos mudar o caminho da propriedade `dataDir` dentro do arquivo `zoo_sample.cfg`. Assim temos:
+- `dataDir=/tmp/zookeeper` para, por exemplo, `C:\zookeeper-3.6.3\data` tanto no arquivo `zoo_sample.cfg` quanto no `zookeeper.properties`;
+- `log.dirs=/tmp/kafka-logs` para, por exemplo, `log.dirs=C:\kafka_2.13-2.8.0\kafka-logs` no cado do `server.properties`.
+
+Vale ressaltar que os caminhos específicados aqui são apenas uma sugestão, é possível colocar os logs tanto do Kafka, quanto o do Zookeeper, em uma mesma pasta, sem problemas. O importante é removê-los do diretório temporário caso desejemos persistir os dados, pois no diretório temporário, os arquivos que lá estão, são apagados de tempos em tempos.
 
 Essas modificações tem que ser feitas para que o Kafka consiga ter e encontrar as pastas com os logs gerados.
 
